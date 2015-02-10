@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="cjsxams.GitHub.com : Joe&#39;s personal homepage">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>真善美</title>
+  </head>
+
+  <body>
+  <script type="text/javascript" src="javascripts/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+<!--          <a id="forkme_banner" href="https://github.com/cjsxams">View on GitHub</a>-->
+
+          <h1 id="project_title">一些日常学习生活的记录</h1>
+          <h2 id="project_tagline" class="align-right">真 善 美</h2>
+		  <nav id="main-nav">
+		  <div>
+		  <ul>
+		  <li>aaaa</li>
+		  <li>aaaa</li>
+		  <li>aaaa</li>
+		  </ul>
+		  </div>
+		  </nav>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub个人主页的搭建</h3>
+
+<p>今天突发奇想想在github上弄一个自己的个人主页,记录一下过程,以供后面有需要使用</p>
+<p>1、新建一个仓库</p>
+<img src="images/new_repository.png"></img>
+<div style="display:none" id="showdiv">
+<p>2、输入仓库名Repository name,例如我输入cjsxams.github.com,到时候就可以通过cjsxams.github.io访问我的主页,如果你输入的是其他的,例如joexams,那么到时候访问主页的地址为cjsxams.github.com/joexams.具体访问的地址后面会再说到.描述Description随便填,这个后面会显示在你主页,后面可以再修改,点击Create repository进入下一步</p>
+<img src="images/create_repository.png"></img>
+<p>3、点击Settings进入</p>
+<img src="images/setting.png"></img>
+<p>4、这里你可以重新设置仓库名称,点击进入主页设置</p>
+<img src="images/setting_info.png"></img>
+<img src="images/continue_to_layouts.png"></img>
+<p>5、选择自己喜欢的模版,然后publish</p>
+<img src="images/publish.png"></img>
+<p>6、建好后回到第四步你可以看到你个人主页的URL</p>
+<img src="images/address.png"></img>
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+</div>
+<a href="#" onclick="showHideCode()">查看更多</a>
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>好运来</h3>
+
+<p>今天晚上公司尾牙,祝自己好运!!</p>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>解决xampp在本地运行响应时间长的问题</h3>
+
+<p>之前一直都在用xampp做为本地的web集成服务器,但是响应时间一直都在2S以上,一直都没找到问题,今天看到有人用wamp也遇到这个问题了,说是把链接数据库那的localhost改为127.0.0.1,试了一下速度果然提升了,再上网查了一下说是在windows7下面连接localhost实际上是连接IP6下面的::1,所以还可以改本地的hosts文件,把localhost改到127.0.0.1,这种方法在有多个项目的情况下比去每个项目改配置文件方便</p>
+<p></p>
+
+<h3>
+<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

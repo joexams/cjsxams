@@ -1,0 +1,3 @@
+function showHideCode(){
+	$("#showdiv").toggle();
+}
